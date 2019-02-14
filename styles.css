@@ -1,0 +1,54 @@
+header {
+  background-color: pink;
+  font-size: 33px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+a {
+  font-size: 53px;
+  margin-left: 80%;
+}
+/* form stylesheet */
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  text-align: center;
+  justify-content: space-around;
+}
+.carreer {
+  width: 90%;
+  background-color: #00FF00;
+  margin: 1%;
+  padding: 1%;
+  text-align: center;
+  border: 3px solid #000000;
+  box-shadow: 3px 3px 3px #000;
+}
+.Career input{
+  width: 80%;
+}
+  .sub{
+    width: 43%;
+    background-color: #D7FF33;
+    margin: 1%;
+    padding: 1%;
+    text-align: center;
+    border: 3px solid #335EEF;
+    box-shadow: 3px  3px 3px #000;
+  }
+.sub input, .sub select {
+  width: 90%;
+  padding: 1%;
+  margin: 1%;
+  font-size: 1em;
+}
+button {
+  font-size: 23px;
+  font-weight: bold;
+  padding: 1%;
+  color: #000000;
+  background: #999999;
+  margin-left: 40%;
+}
