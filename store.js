@@ -31,7 +31,7 @@ function submit() {
   //upgradeneeded
   request.onupgradeneeded=function(e) {
     result=e.target.result;
-    result.createObjectStore("resume",{keypath:'id',autoIncrement:true});
+    store=result.createObjectStore("resume",{keyPath:'id',autoIncrement:true});
   }
   //success
   request.onsuccess=function(e) {
@@ -41,12 +41,38 @@ function submit() {
     store=tx.objectStore("resume");
     store.put(
       {
-      co:carreer
+      co:carreer,
+      Name:name,
+      Role:role,
+      Num:phonenumber,
+      Mail:mailid,
+      Education:[
+        {
+          Degree:degree,
+          College:dcollege,
+          Branch:branch,
+          Marks:dmarks
+        },
+        {
+        Degree:idegree,
+        College:icollege,
+        Branch:ibranch,
+        Marks:imarks
+      },
+      {
+        Degree:board,
+        College:school,
+        Branch:medium,
+        Marks:smarks
       }
+    ],
+    skills:skills
+    }
     );
   }
   //error
   request.onerror=function(e) {
     console.log("error"+e);
   }
+  window.open("index.html","_self");
  }

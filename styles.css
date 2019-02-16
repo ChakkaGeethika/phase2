@@ -5,7 +5,7 @@ header {
   font-weight: bold;
   text-align: center;
 }
-a {
+.a {
   font-size: 53px;
   margin-left: 80%;
 }
@@ -51,4 +51,99 @@ button {
   color: #000000;
   background: #999999;
   margin-left: 40%;
+}
+/* desing styles for card */
+
+.cards{
+  width: 100%;
+  background: #acd;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1%;
+  }
+.card {
+  background: white;
+  width: 30%;
+  box-shadow: 2px 2px 2px 2px black;
+  margin: 1%;
+  text-align: center;
+  padding: 1%;
+}
+.main{
+  display: flex;
+  /*justify-content:  space-between;*/
+
+}
+.left{
+width: 30%;
+background-color: #ddd;
+border: 3px solid #fff000;
+box-shadow: 3px 3px 3px #000000;
+
+}
+.right{
+margin: 1%;
+padding: 1%;
+background-color: #FFFACD;
+border: 1px solid #000fff;
+}
+@media screen and (min-width:320px) and (max-width:480px) {
+  .cards ,.main{
+    display:flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .card ,.sub{
+    width: 93%;
+  }
+  .carreer{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .left {
+    width: 90%;
+  }
+  .right {
+    width: 90%;
+  }
+}
+@media screen and (min-width:481px) and (max-width:800px) {
+  .cards , .main{
+    display:flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 43%;
+  }
+  .sub {
+    width: 93%;
+  }
+  .carreer,.main {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button {
+    margin-left: 45%;
+  }
+  .left {
+    width: 93%;
+  }
+  .right {
+    width: 90%;
+  }
+}
+@media screen and (min-width:801px) and (max-width:1500px) {
+  .cards {
+    display:flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 28%;
+  }
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
